@@ -1,0 +1,16 @@
+# Optional: run Sentinel as a systemd service so it starts at boot.
+# Copy to /etc/systemd/system/sentinel.service, replace YOUR_USER and the path, then:
+#   sudo systemctl daemon-reload && sudo systemctl enable --now sentinel
+[Unit]
+Description=Sentinel Monitoring Backend (PHP built-in server)
+After=network.target
+
+[Service]
+User=YOUR_USER
+SupplementaryGroups=adm
+WorkingDirectory=/home/YOUR_USER/apache-monitor
+ExecStart=/usr/bin/php -S 0.0.0.0:8080 -t /home/YOUR_USER/apache-monitor /home/YOUR_USER/apache-monitor/router.php
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
