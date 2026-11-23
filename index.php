@@ -12,8 +12,8 @@
 <header>
   <div class="brand">
     <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true">
-      <path d="M21 3 36 9v11c0 9-6 16-15 19C12 36 6 29 6 20V9z" fill="#0f1b15" stroke="#3ddc84" stroke-width="2.5"/>
-      <path d="M13 22h5l3-7 4 12 3-5h3" fill="none" stroke="#3ddc84" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M21 3 36 9v11c0 9-6 16-15 19C12 36 6 29 6 20V9z" fill="#0e1524" stroke="#4da3ff" stroke-width="2.5"/>
+      <path d="M13 22h5l3-7 4 12 3-5h3" fill="none" stroke="#ff4d5e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     <div><h1>Sentinel</h1><small id="serverName">Server: connecting…</small></div>
   </div>
